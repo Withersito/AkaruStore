@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home| Akaru</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="1.png">
+</head>
+<body>
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+  <div class="sidebar" id="sidebar">
+    <img src="logo.png" alt="Logo" class="logo">
+    <div class="search-container">
+      <form id="search-form">
+        <input type="text" id="buscador" placeholder="Search" />
+      </form>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Calcomanias.html">Calcomanias</a></li>
+      <li><a href="Pines.html">Pines</a></li>
+      <li><a href="Parches.html">Parches</a></li>
+      <li><a href="https://chat.whatsapp.com/Jup24rUKw1QDdtXaKPWnHC">Nuestro grupo de Whatsapp</a></li>
+    </ul>
+  </div>
+
+  <div class="top-image">
+    <div class="slider-container">
+      <input type="radio" name="slider" id="s1" checked>
+      <input type="radio" name="slider" id="s2">
+      <input type="radio" name="slider" id="s3">
+      <input type="radio" name="slider" id="s4">
+
+      <div class="slides">
+        <div class="slide s1">
+          <img src="banner.png" alt="Slide 1">
+          <label for="s4" class="arrow prev">&#10094;</label>
+          <label for="s2" class="arrow next">&#10095;</label>
+        </div>
+        <div class="slide s2">
+          <img src="imagenes/producto/image1.jpg" alt="Slide 2">
+          <label for="s1" class="arrow prev">&#10094;</label>
+          <label for="s3" class="arrow next">&#10095;</label>
+        </div>
+        <div class="slide s3">
+          <img src="imagenes/producto/image2.jpg" alt="Slide 3">
+          <label for="s2" class="arrow prev">&#10094;</label>
+          <label for="s4" class="arrow next">&#10095;</label>
+        </div>
+        <div class="slide s4">
+          <img src="imagenes/producto/image4.jpg" alt="Slide 4">
+          <label for="s3" class="arrow prev">&#10094;</label>
+          <label for="s1" class="arrow next">&#10095;</label>
+        </div>
+      </div>
+
+      <div class="navigation-manual">
+        <label for="s1" class="manual-btn"></label>
+        <label for="s2" class="manual-btn"></label>
+        <label for="s3" class="manual-btn"></label>
+        <label for="s4" class="manual-btn"></label>
+      </div>
+    </div>
+  </div>
+
+  <div class="productos">
+    <!-- 150 productos, en filas de 6 -->
+    <!-- Se repiten 4 imágenes cíclicamente -->
+    <div class="producto">
+      <img src="imagenes/producto/image1.jpg" alt="Artículo 1">
+      <p>Nombre del artículo</p>
+      <p>precio</p>
+    </div>
+    <div class="producto">
+      <img src="imagenes/producto/image2.jpg" alt="Artículo 2">
+      <p>Nombre del artículo</p>
+      <p>precio</p>
+    </div>
+    <div class="producto">
+      <img src="imagenes/producto/image3.jpg" alt="Artículo 3">
+      <p>Nombre del artículo</p>
+      <p>precio</p>
+    </div>
+    <div class="producto">
+      <img src="imagenes/producto/image4.jpg" alt="Artículo 4">
+      <p>Nombre del artículo</p>
+      <p>precio</p>
+    </div>
+    <!-- ... hasta artículo 150 ... -->
+    <div class="producto">
+      <img src="imagenes/producto/image2.jpg" alt="Artículo 150">
+      <p>sexo</p>
+      <p>precio</p>
+    </div>
+  </div>
+
+  <div class="scrollbar-track">
+    <div class="scrollbar-thumb" id="scrollbar-thumb"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
